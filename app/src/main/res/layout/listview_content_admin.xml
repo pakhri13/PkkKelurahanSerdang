@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:id="@+id/txt_name"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_name_event"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_place"
+        android:text="Tempat : "
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_below="@id/txt_name"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_place"
+        android:layout_below="@+id/txt_sign_place"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="@string/text_place_event"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_date"
+        android:text="Tanggal : "
+        android:layout_marginStart="20dp"
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_toEndOf="@+id/txt_place"
+        android:layout_below="@id/txt_name"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_date"
+        android:layout_below="@+id/txt_sign_date"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:layout_toEndOf="@+id/txt_place"
+        android:text="@string/text_date_event"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_time"
+        android:layout_marginStart="20dp"
+        android:text="Waktu : "
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_toEndOf="@+id/txt_place"
+        android:layout_below="@id/txt_date"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_time"
+        android:layout_below="@+id/txt_sign_time"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/txt_place"
+        android:text="@string/text_time_event"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_uniform"
+        android:text="Pakaian : "
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_below="@id/txt_place"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_uniform"
+        android:layout_below="@id/txt_sign_uniform"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:text="@string/text_uniform_event"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/button_edit_admin"
+        android:background="@drawable/button_round_cyan"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:text="@string/admin_edit"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/button_delete_admin"
+        android:layout_below="@id/button_edit_admin"
+        android:background="@drawable/button_round_red"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:text="@string/admin_delete"/>
+
+    <View
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_uniform"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

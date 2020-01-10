@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">PKK keluarahan Serdang</string>
+    <string name="kemayoran_office_district">Kecamatan Kemayoran</string>
+    <string name="serdang_office_district">Kelurahan Serdang</string>
+    <string name="location_rptra_serdang">RPTRA Serdang</string>
+    <string name="serdang_puskesmas">Puskesmas Serdang</string>
+    <string name="serdang_sekretariat">Kantor PKK Serdang</string>
+    <string name="login_button">Masuk</string>
+    <string name="for_upload">Sentuh Icon Untuk Memilih Gambar</string>
+    <string name="upload_image">Unduh Foto</string>
+    <string name="Field_Name_Register">Nama</string>
+    <string name="Field_Email_Register">Email</string>
+    <string name="Field_Position_Register">Jabatan</string>
+    <string name="Field_Password_Register">Password</string>
+    <string name="Field_confPass_Register">Confirm Password</string>
+    <string name="Field_Name_Event">Nama Acara</string>
+    <string name="Field_Date_Event">Tanggal Acara(DD/MM/YYYY)</string>
+    <string name="Field_Time_Event">Waktu Acara</string>
+    <string name="Field_Place_Event">Tempat Acara</string>
+    <string name="Field_Uniform_Event">Seragam Yang Digunakan</string>
+    <string name="confirm_add">Tambahkan</string>
+    <string name="confirm_cancel">Batalkan</string>
+    <string name="admin_edit">Ubah</string>
+    <string name="admin_delete">Hapus</string>
+    <string name="text_name_event">Nama Acara</string>
+    <string name="text_place_event">Tempat Acara</string>
+    <string name="text_date_event">Tanggal Acara</string>
+    <string name="text_time_event">Waktu Acara</string>
+    <string name="text_uniform_event">Seragam Acara</string>
+    <string name="title_splash">PKK</string>
+    <string name="description_title">(Pemberdayaan Kesejahteraan Keluarga)</string>
+    <string name="subdistrict_name">Kelurahan Serdang</string>
+    <string name="user_icon_list">Daftar Acara PKK</string>
+    <string name="user_icon_location">Lokasi Acara PKK</string>
+    <string name="user_icon_about">Tentang PKK Serdang</string>
+    <string name="user_icon_profile">Profile Anggota PKK</string>
+    <string name="Email_User">Email Anggota</string>
+    <string name="Name_User">Nama Anggota</string>
+    <string name="Position_User">Jabatan Anggota</string>
+    <string-array name="Position">
+        <item>Ketua</item>
+        <item>Wakil Ketua</item>
+        <item>Sekertaris</item>
+        <item>Bendahara</item>
+        <item>Pokja 1</item>
+        <item>Pokja 2</item>
+        <item>Pokja 3</item>
+    </string-array>
+    <string name="title_activity_kemayoran_district_location">Map</string>
+    <string name="Visi_Title">VISI</string>
+    <string name="Misi_Title">MISI</string>
+    <string name="pkk_desc">Organisasi kemasyarakatan yang memberdayakan wanita untuk turut berpartisipasi dalam pembangunan Indonesia</string>
+    <string name="misi1">Meningkatkan mental spiritual, perilaku hidup dengan menghayati dan mengamalkan Pancasila serta meningkatkan pelaksanaan hak dan kewajiban sesuai dengan hak azasi manusia (HAM), demokrasi, meningkatkan kesetiakawanan sosial dan kegotong royongan serta pembentukan watak bangsa yang selaras, serasi dan seimbang.</string>
+    <string name="misi2">Meningkatkan pendidikan dan ketrampilan yang diperlukan, dalam upaya mencerdaskan kehidupan bangsa serta pendapatan keluarga.</string>
+    <string name="misi3">Meningkatkan pengelolaan Gerakan PKK baik kegiatan pengorganisasian maupun pelaksanaan program-programnya yang disesuaikan dengan situasi dan kondisi masyarakat setempat.</string>
+</resources>

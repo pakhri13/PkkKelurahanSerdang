@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:id="@+id/txt_name_user"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_name_event"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:id="@+id/center_list"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_name_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_place"
+        android:text="Tempat : "
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/center_list"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/txt_place_user"
+        android:layout_below="@+id/txt_sign_place"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="@string/text_place_event"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_date"
+        android:text="Tanggal : "
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:layout_toEndOf="@+id/center_list"
+        android:layout_below="@id/txt_name_user"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_date_user"
+        android:layout_below="@+id/txt_sign_date"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:layout_toEndOf="@+id/center_list"
+        android:text="@string/text_date_event"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_time"
+        android:text="Waktu : "
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_toEndOf="@+id/center_list"
+        android:layout_below="@id/txt_date_user"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_time_user"
+        android:layout_below="@+id/txt_sign_time"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:layout_toEndOf="@+id/center_list"
+        android:text="@string/text_time_event"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sign_uniform"
+        android:text="Pakaian : "
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_below="@id/txt_place_user"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_uniform_user"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/txt_sign_uniform"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:text="@string/text_uniform_event"/>
+
+    <View
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_uniform_user"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

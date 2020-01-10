@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:background="@drawable/road"
+        android:alpha="0.5"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regis_desc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/back_round_green"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_input_nama_regis"
+                app:errorEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_input_nama_regis"
+                    android:ems="15"
+                    android:textColor="#000"
+                    android:background="@drawable/button_round_white"
+                    android:drawableStart="@drawable/account_24"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/Field_Name_Register"
+                    android:fontFamily="serif"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_input_mail"
+                app:errorEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_input_mail_regis"
+                    android:ems="15"
+                    android:textColor="#000"
+                    android:background="@drawable/button_round_white"
+                    android:drawableStart="@drawable/ic_mail_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/Field_Email_Register"
+                    android:fontFamily="serif"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_input_position"
+                app:errorEnabled="true">
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_input_position_regis"
+                    android:ems="15"
+                    android:textColor="#000"
+                    android:background="@drawable/button_round_white"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/Field_Position_Register"
+                    android:fontFamily="serif"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_input_password"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_input_password_regis"
+                    android:ems="15"
+                    android:textColor="#000"
+                    android:background="@drawable/button_round_white"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/Field_Password_Register"
+                    android:fontFamily="serif"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_input_conf_password"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_input_conf_password_regis"
+                    android:ems="15"
+                    android:textColor="#000"
+                    android:background="@drawable/button_round_white"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/Field_confPass_Register"
+                    android:fontFamily="serif"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.gms.common.internal.SignInButtonImpl
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_Register"
+                android:layout_marginTop="30dp"
+                android:text="Daftar"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:ems="11"
+                android:background="@drawable/button_round_cyan"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_password"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/regis_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:elevation="4dp"
+        android:src="@drawable/pkk" />
+
+    <TextView
+        android:id="@+id/regis_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Daftar Disini"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/regis_desc"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Harap Isi Dengan Benar Untuk Mendaftar"
+        android:layout_below="@+id/regis_title"
+        android:textColor="#000"
+        android:fontFamily="monospace"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+
+</ScrollView>

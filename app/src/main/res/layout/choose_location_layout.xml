@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_background_stroke"
+        android:id="@+id/linear_district_kemayoran"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/kemayoran"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:text="@string/kemayoran_office_district"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="100dp"
+        android:id="@+id/center_location_up"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linear_district_kemayoran"/>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="100dp"
+        android:id="@+id/center_location_down"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_district_kemayoran"/>
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_background_stroke"
+        android:id="@+id/linear_sub_district_serdang"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/center_location_up"
+        app:layout_constraintBottom_toTopOf="@id/linear_district_kemayoran">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/serdangbaru"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:text="@string/serdang_office_district"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_background_stroke"
+        android:id="@+id/linear_rptra_serdang"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/center_location_up"
+        app:layout_constraintBottom_toTopOf="@id/linear_district_kemayoran">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/rptra"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:text="@string/location_rptra_serdang"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_background_stroke"
+        android:id="@+id/linear_puskesmas_serdang"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/center_location_down"
+        app:layout_constraintTop_toBottomOf="@id/linear_district_kemayoran">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/puskesmas"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:text="@string/serdang_puskesmas"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_background_stroke"
+        android:id="@+id/linear_sekretariat_pkk"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/center_location_down"
+        app:layout_constraintTop_toBottomOf="@id/linear_district_kemayoran">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pkk"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:text="@string/serdang_sekretariat"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

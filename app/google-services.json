@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1011102729543",
+    "firebase_url": "https://pkkserdang.firebaseio.com",
+    "project_id": "pkkserdang",
+    "storage_bucket": "pkkserdang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011102729543:android:b2ea2273654e7118a8f862",
+        "android_client_info": {
+          "package_name": "com.serdang.PKK"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011102729543-lck35g06ee64ujccp5r20vk8ps818934.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serdang.PKK",
+            "certificate_hash": "52019e0f8cec9db708895dc419e6213a819548d8"
+          }
+        },
+        {
+          "client_id": "1011102729543-kv8683ucaucilp0782tsju4pevn17705.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaD6QAde_8QByree68k-V-Ubwtue0QbsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011102729543-kv8683ucaucilp0782tsju4pevn17705.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

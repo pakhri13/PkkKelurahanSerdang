@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_input_name_event"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_name"
+            android:ems="15"
+            android:textColor="#000"
+            android:drawablePadding="16dp"
+            android:hint="@string/Field_Name_Event"
+            android:fontFamily="serif"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_input_place_event"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_input_name_event"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_place"
+            android:ems="15"
+            android:textColor="#000"
+            android:drawablePadding="16dp"
+            android:hint="@string/Field_Place_Event"
+            android:fontFamily="serif"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_input_date_event"
+        android:layout_below="@+id/txt_input_place_event"
+        android:layout_centerHorizontal="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_date"
+            android:ems="15"
+            android:textColor="#000"
+            android:editable="false"
+            android:inputType="none"
+            android:drawablePadding="16dp"
+            android:hint="@string/Field_Date_Event"
+            android:fontFamily="serif"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_input_time_event"
+        android:layout_below="@+id/txt_input_date_event"
+        android:layout_centerHorizontal="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_time"
+            android:ems="15"
+            android:editable="false"
+            android:textColor="#000"
+            android:drawablePadding="16dp"
+            android:hint="@string/Field_Time_Event"
+            android:inputType="none"
+            android:fontFamily="serif"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_input_unifrom_event"
+        android:layout_below="@+id/txt_input_time_event"
+        android:layout_centerHorizontal="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_uniform"
+            android:ems="15"
+            android:textColor="#000"
+            android:drawablePadding="16dp"
+            android:hint="@string/Field_Uniform_Event"
+            android:fontFamily="serif"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add_event_admin"
+        android:background="@drawable/button_round_cyan"
+        android:layout_below="@+id/txt_input_unifrom_event"
+        android:layout_centerHorizontal="true"
+        android:text="@string/confirm_add"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:ems="11"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cancel_event_admin"
+        android:background="@drawable/button_round_red"
+        android:layout_below="@+id/btn_add_event_admin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/confirm_cancel"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:ems="11"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
+</ScrollView>
